@@ -23,12 +23,15 @@ Route::get('/pizzas', function () {
     ['type' => 'veg supreme', 'base' => 'thin & crispy']
   ];
 
-  $name = request('name');
-
   return view('pizzas', [
     'pizzas' => $pizzas, 
     'name' => $name,
-    'age' => request('age'),
   ]);
 });
+
+Route::get('/pizzas/{id}', function ($id) {
+  // use the $id variable to query the db for a record
+  return view('details', ['id' => $id]);
+});
+
 
