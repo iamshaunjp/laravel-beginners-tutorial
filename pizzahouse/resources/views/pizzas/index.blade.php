@@ -9,7 +9,7 @@
 
         @foreach($pizzas as $pizza)
           <div>
-            {{ $pizza['name'] }} - {{ $pizza['type'] }} - {{ $pizza['base'] }}
+            <a href="/pizzas/{{ $pizza->id }}">{{ $pizza->name }}</a>
           </div>
         @endforeach
 
