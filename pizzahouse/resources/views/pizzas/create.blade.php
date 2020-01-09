@@ -6,7 +6,7 @@
   <form action="/pizzas" method="POST">
     @csrf
     <label for="name">Your name:</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" required>
     <label for="type">Choose type of pizza:</label>
     <select name="type" id="type">
       <option value="margarita">Margarita</option>
