@@ -24,8 +24,7 @@ Route::get('/pizzas', function () {
   ];
 
   return view('pizzas', [
-    'pizzas' => $pizzas, 
-    'name' => $name,
+    'pizzas' => $pizzas,
   ]);
 });
 
