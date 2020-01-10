@@ -3,7 +3,7 @@
 @section('content')
 <div class="wrapper create-pizza">
   <h1>Create a New Pizza</h1>
-  <form action="/pizzas" method="POST">
+  <form action="{{ route('pizzas.store') }}" method="POST">
     @csrf
     <label for="name">Your name:</label>
     <input type="text" name="name" id="name" required>
